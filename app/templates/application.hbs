@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Книжный клуб </title>
+    <link rel="stylesheet" href="/assets/club-book.css">
+</head>
+
+<body class="home-page">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        {{#link-to "application"}}
+            <img src="/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Книжный клуб
+        {{/link-to}}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="nav navbar-nav navigation-main">
+                <li class="nav-item nav-link">
+                    Встречи клуба
+                </li>
+                <li class="nav-item nav-link">
+                    Рабочий стол
+                </li>
+                <li class="nav-item nav-link">
+                    Книги
+                </li>
+                <li class="nav-item nav-link">
+                    {{#link-to "speakers"}}
+                    Спикеры
+                    {{/link-to}}
+                </li>
+                <li class="nav-item nav-link">
+                    Оставить заявку
+                </li>
+                <li class="nav-item nav-link">
+                    Запланировать
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Войти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container h-100" style="margin-top: 100px;">
+        {{outlet}}
+    </div>
+
+    <footer class="footer fixed-bottom blockquote">
+        <div class="container">
+            <span>&copy; Skyori, 2022</span>
+        </div>
+    </footer>
+</body>
