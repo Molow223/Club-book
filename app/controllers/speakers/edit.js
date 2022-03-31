@@ -3,7 +3,7 @@ import Controller from '@ember/controller';
 export default Controller.extend({
   actions: {
     async saveSpeaker(speaker) {
-      let speakerModel = this.get('model');
+      const speakerModel = this.model;
       speakerModel.set('firstName', speaker.firstName);
       speakerModel.set('lastName', speaker.lastName);
       speakerModel.set('img', speaker.img);

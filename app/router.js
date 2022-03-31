@@ -13,6 +13,8 @@ Router.map(function() {
     this.route('detail', { path: '/:id' });
   });
   this.route('404', { path: '*path' });
+  this.route('books');
+  this.route('meetings');
 });
 
 export default Router;

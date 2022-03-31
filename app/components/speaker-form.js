@@ -7,10 +7,10 @@ export default Component.extend({
       e.preventDefault();
 
       this.onSubmit({
-        id: self.get('idSpeaker'),
-        firstName: self.get('firstName'),
-        lastName: self.get('lastName'),
-        img: self.get('img'),
+        id: this.get('idSpeaker'),
+        firstName: this.get('firstName'),
+        lastName: this.get('lastName'),
+        img: this.get('img'),
       });
     }
   },
@@ -19,7 +19,7 @@ export default Component.extend({
     this._super(...arguments);
 
     this.setProperties({
-      idSpeaker: this.get('speaker.id') ? self.get('speaker.id') : undefined,
+      idSpeaker: this.get('speaker.id') ? this.get('speaker.id') : undefined,
       firstName: this.get('speaker.firstName'),
       lastName: this.get('speaker.lastName'),
       img: this.get('speaker.img'),
