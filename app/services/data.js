@@ -41,7 +41,7 @@ export default Service.extend({
             body: JSON.stringify(speaker),
         });
     },
-    
+
     async updateSpeaker(speaker) {
         this.speakers.removeObject(speaker);
         return fetch(`${ENV.backendURL}/speakers/${speaker.id}`, {
@@ -50,6 +50,48 @@ export default Service.extend({
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(speaker),
+        });
+    },
+
+    async getBooksData(search) {
+        let queryParams = '';
+        if (search) {
+            queryParams = `?q=${search}`;
+        }
+        let response = await fetch(`${ENV.backendURL}/books${queryParams}`);
+        let books = await response.json();
+        this.books.clear();
+        this.books.pushObjects(books);
+        return this.books;
+    },
+
+    getBookData(id) {
+        return this.books.find((book) => book.id === parseInt(id));
+    },
+
+    async createBook(book) {
+        return await fetch(`${ENV.backendURL}/books`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(book),
+        });
+    },
+    async updateBook(book) {
+        this.books.removeObject(book);
+        return await fetch(`${ENV.backendURL}/books/${book.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(book),
+        });
+    },
+    deleteBook(book) {
+        this.books.removeObject(book);
+        return fetch(`${ENV.backendURL}/books/${book.id}`, {
+            method: 'DELETE',
         });
     },
 });

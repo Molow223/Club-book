@@ -11,7 +11,7 @@
       "id": 2,
       "type": "speaker",
       "firstName": "Edgar",
-      "lastName": "Poe8",
+      "lastName": "Poe",
       "img": "/2.jpg"
     },
     {
@@ -82,11 +82,12 @@
       "authorId": "1",
       "pages": "789",
       "img": "/3.jpg",
-      "progress": "32%"
+      "progress": "32%",
+      "author": "прп"
     },
     {
       "id": 4,
-      "title": "Чип и Дейл 23",
+      "title": "Чип и Дейл",
       "authorId": "2",
       "pages": "147",
       "img": "/6.jpg",
@@ -164,6 +165,14 @@
       "progress": "75%",
       "isbn": null,
       "id": 19
+    },
+    {
+      "title": "сми",
+      "author": "jurnal",
+      "pages": "89",
+      "img": "/6.jpg",
+      "progress": "52",
+      "id": 20
     }
   ],
   "meetings": [

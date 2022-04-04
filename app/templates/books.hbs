@@ -1,1 +1,65 @@
-{{outlet}}
+<div class="htop">
+    <h2 class="text-center">Книги</h2>
+    <div class="form-row navbar-panel justify-content-between">
+        <div class="col-md-auto">
+            {{#link-to "books.create"}}
+            <button class="btn btn-outline-primary my-2" type="button" title="Добавить книгу">
+                <svg viewBox="0 0 16 16" class="bi bi-plus card-button" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                Add
+            </button>
+            {{/link-to}}
+        </div>
+
+        <div class="col-md-auto">
+            <form class="form-inline">
+                {{input class="form-control mr-2 search-long" type="text" placeholder="Найти по полям"
+                value=search aria-label="Найти по полям"}}
+                <button class="btn btn-primary my-2" type="submit">Найти</button>
+            </form>
+        </div>
+
+        <div class="col-md-auto">
+            <form class="form-inline">
+                <input class="form-control mr-2" type="search" placeholder="Поиск по тегам" aria-label="Найти по тегам">
+                <button class="btn btn-primary my-2" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+    {{#if isLoading}}
+    <div class="welcome-page" style="margin-top: 70px">
+        <img src="/cubs.gif" alt="loading">
+    </div>
+    {{else}}
+    {{outlet}}
+    <div class="row row-cols-1 row-cols-md-3 fix-margin">
+        {{#each this.model.books as |book|}}
+        {{book-item title=book.title img=book.img author=book.author pages=book.pages progress=book.progress id=book.id
+        tagName=''}}
+        {{/each}}
+    </div>
+    {{/if}}
+    <nav aria-label="Page navigation example" style="margin: 100px;">
+        <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            {{#each pages as |page|}}
+            <li class="page-item page-link">
+                {{link-to page "books" (query-params page=page)}}
+            </li>
+            {{/each}}
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</div>

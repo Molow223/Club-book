@@ -1,11 +1,14 @@
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  dataService: service('data'),
 
   actions: {
     submitForm(e) {
       e.preventDefault();
 
+      const self = this;
       this.onSubmit({
         id: this.get('idSpeaker'),
         firstName: this.get('firstName'),
@@ -17,7 +20,7 @@ export default Component.extend({
 
   didReceiveAttrs() {
     this._super(...arguments);
-
+    const self = this;
     this.setProperties({
       idSpeaker: this.get('speaker.id') ? this.get('speaker.id') : undefined,
       firstName: this.get('speaker.firstName'),

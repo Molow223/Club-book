@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <div>
+            {{#link-to "books"}}
+            <button class="btn btn-outline-primary" type="button">Back</button>
+            {{/link-to}}
+        </div>
+    </div>
+    <div>
+        <div class="title">
+            <h3>New Book: {{book.title}}</h3>
+        </div>
+    </div>
+    <div>
+        {{book-form book=model onSubmit=(action "saveBook")}}
+    </div>
+
+</div>
