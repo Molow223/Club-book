@@ -1,12 +1,12 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  title: DS.attr(),
-  author: DS.attr(),
-  pages: DS.attr(),
-  img: DS.attr(),
-  progress: DS.attr(),
-  isbn: DS.attr(),
-  
-  speaker: DS.belongsTo('speaker'),
+  title: DS.attr('string'),
+  author: DS.attr('string'),
+  size: DS.attr('number'),
+  progress: DS.attr('string'),
+  img: DS.attr('string'),
+  tags: DS.attr(),
+
+  reports: DS.hasMany('report'),
 });

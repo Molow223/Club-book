@@ -1,256 +1,168 @@
 {
   "speakers": [
     {
-      "id": 1,
-      "type": "speaker",
-      "firstName": "Roberto ",
-      "lastName": "Martinu",
-      "img": "/6.jpg"
+      "firstName": "Karl",
+      "lastName": "Marks",
+      "img": "/1.jpg",
+      "id": 1
     },
     {
-      "id": 2,
-      "type": "speaker",
-      "firstName": "Edgar",
-      "lastName": "Poe",
-      "img": "/2.jpg"
+      "firstName": "Pepsi",
+      "lastName": "Cola",
+      "img": "/3.jpg",
+      "id": 3
     },
     {
-      "id": 3,
-      "type": "speaker",
-      "firstName": "Alexo8",
-      "lastName": "Push",
-      "img": "/8.jpg"
+      "firstName": "Tic",
+      "lastName": "Tak",
+      "img": "/4.jpg",
+      "id": 4
     },
     {
-      "id": 4,
-      "type": "speaker",
-      "firstName": "Robert",
-      "lastName": "Martin",
-      "img": "/5.jpg"
-    },
-    {
-      "firstName": "Robert",
-      "lastName": "Robertovich",
-      "img": "/6.jpg",
-      "type": "speaker",
+      "firstName": "Kit",
+      "lastName": "Kat",
+      "img": "/5.jpg",
       "id": 5
     },
     {
-      "firstName": "126",
-      "lastName": "Robertз",
-      "img": "/3.jpg",
-      "type": "speaker",
+      "firstName": "Milky",
+      "lastName": "Way",
+      "img": "/6.jpg",
       "id": 6
     },
     {
-      "firstName": "Dmitriy",
-      "lastName": "Donskoy",
-      "img": "/8.jpg",
-      "type": "speaker",
+      "firstName": "Anton",
+      "lastName": "Chehov",
+      "img": "/7.jpg",
       "id": 7
     },
     {
-      "firstName": "Edgarhfthhf",
-      "lastName": "Roberto",
-      "img": "/3.jpg",
-      "type": "speaker",
+      "firstName": "Hot",
+      "lastName": "dog",
+      "img": "/1.jpg",
       "id": 8
-    },
-    {
-      "firstName": "Patrik",
-      "lastName": "Star",
-      "img": "/6.jpg",
-      "id": 9
-    },
-    {
-      "firstName": "Lord",
-      "lastName": "Volandemort",
-      "img": "/5.jpg",
-      "id": 10
-    },
-    {
-      "firstName": "Robert8",
-      "lastName": "Roberto",
-      "img": "/6.jpg",
-      "id": 12
     }
   ],
   "books": [
     {
       "id": 3,
-      "title": "Про кубики ",
-      "authorId": "1",
-      "pages": "789",
+      "title": "Про кубики",
+      "speakerId": 1,
+      "pages": 789,
       "img": "/3.jpg",
-      "progress": "32%",
-      "author": "прп"
+      "progress": null,
+      "author": "пр2",
+      "isbn": null,
+      "publishDate": null
     },
     {
       "id": 4,
       "title": "Чип и Дейл",
-      "authorId": "2",
+      "speakerId": "1",
       "pages": "147",
       "img": "/6.jpg",
-      "progress": "68%"
-    },
-    {
-      "id": 5,
-      "title": "Чип и Дейл",
-      "authorId": "1",
-      "pages": "147",
-      "img": "/4.jpg",
-      "progress": "68%"
-    },
-    {
-      "id": 6,
-      "title": "Чип и Дейл",
-      "authorId": "2",
-      "pages": "147",
-      "img": "/4.jpg",
-      "progress": "68%"
+      "progress": "68%",
+      "author": "Rokfor"
     },
     {
       "title": "kool",
-      "authorId": "3",
+      "speakerId": "3",
       "pages": "12",
       "img": "/4.jpg",
       "progress": "13%",
-      "id": 13
-    },
-    {
-      "title": "pop",
-      "authorId": "5",
-      "pages": "52",
-      "img": "/5.jpg",
-      "progress": "23%",
-      "id": 14
-    },
-    {
-      "title": "Roberto",
-      "authorId": "5",
-      "pages": "25",
-      "img": "/6.jpg",
-      "progress": "69%",
-      "id": 15
-    },
-    {
-      "title": "Edgarhfthhf",
-      "authorId": "7",
-      "pages": "56",
-      "img": "/4.jpg",
-      "progress": "36%",
-      "id": 16
-    },
-    {
-      "title": "cvnc",
-      "authorId": "8",
-      "pages": "236",
-      "img": "/7.jpg",
-      "progress": "52%",
-      "id": 17
-    },
-    {
-      "title": "cb",
-      "authorId": "9",
-      "pages": "15",
-      "img": "/6.jpg",
-      "progress": "56%",
-      "id": 18
-    },
-    {
-      "title": "Чип и Дейл 23",
-      "authorId": "9",
-      "pages": "253",
-      "img": "/2.jpg",
-      "progress": "75%",
-      "isbn": null,
-      "id": 19
+      "id": 13,
+      "author": "Joy Go"
     },
     {
       "title": "сми",
       "author": "jurnal",
+      "speakerId": "1",
       "pages": "89",
       "img": "/6.jpg",
-      "progress": "52",
+      "progress": "52%",
       "id": 20
+    },
+    {
+      "title": "Hot",
+      "author": "Dog",
+      "pages": 236,
+      "img": "/2.jpg",
+      "progress": null,
+      "isbn": null,
+      "publishDate": null,
+      "id": 21
+    },
+    {
+      "title": "Hot",
+      "author": "Dog",
+      "pages": 258,
+      "img": "/2.jpg",
+      "progress": 12,
+      "isbn": null,
+      "publishDate": null,
+      "id": 22
     }
   ],
   "meetings": [
     {
       "reservationDate": "24.10.2019",
       "id": 3,
-      "title": "Про кубики ",
-      "author": "NameAuthor3",
-      "img": "/3.jpg",
-      "progress": "32%",
-      "review": "Eum non qui tempore. Omnis debitis ut tenetur vero esse quia. Animi eum non vel consectetur unde voluptas modi qui error."
+      "reports": []
     },
     {
       "reservationDate": "26.10.2019",
       "id": 4,
-      "title": "Чип и Дейл",
-      "author": "NameAuthor4",
-      "review": "147",
-      "img": "/4.jpg",
-      "progress": "68%"
+      "reports": []
     },
     {
       "reservationDate": "26.10.2019",
       "id": 5,
-      "title": "Про кубики",
-      "author": "NameAuthor3",
-      "img": "/8.jpg",
-      "progress": "32%",
-      "review": "Eum non qui tempore. Omnis debitis ut tenetur vero esse quia. Animi eum non vel consectetur unde voluptas modi qui error."
+      "reports": []
     },
     {
       "reservationDate": "24.10.2019",
       "id": 6,
-      "title": "Про кубики",
-      "author": "NameAuthor3",
-      "img": "/7.jpg",
-      "progress": "32%",
-      "review": "Eum non qui tempore. Omnis debitis ut tenetur vero esse quia. Animi eum non vel consectetur unde voluptas modi qui error."
+      "reports": []    
     },
     {
-      "title": "hytg",
-      "author": "loit",
-      "img": "/6.jpg",
-      "progress": "52%",
-      "review": "NameAuthor",
-      "id": 7
-    },
-    {
-      "title": "Capital",
-      "author": "Marks",
-      "img": "/3.jpg",
-      "progress": "65%",
-      "review": "pol",
-      "id": 8
-    },
-    {
-      "title": "L.C.8",
-      "author": "xcvxc",
-      "img": "/5.jpg",
-      "progress": "25%",
-      "review": "hdg",
-      "id": 9
+      "reservationDate": "27.10.2019",
+      "id": 7,
+      "reports": []    
     }
   ],
-  "reviews": [
+  "reports": [
     {
-      "id": 2,
-      "user": "Jhon Travolta",
-      "body": "This is a good book!",
-      "publishDate": "2020-11-11T19:00:00.000z",
-      "bookId": 3
+      "id": 1,
+      "date": "2022-01-11T00:00:00.000Z",
+      "grade": 75,
+      "urlVideo": "https://www.youtube.com/",
+      "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
+      "review": "Описание книги1 Описание книги1 Описание книги1 Описание книги1",
+      "meetingId": 1,
+      "speakerId": 1,
+      "bookId": 1
     },
     {
-      "id": 4,
-      "user": "Jhon Travolta",
-      "body": "This is a good book!",
-      "publishDate": "2020-11-13T19:00:00.000z",
-      "bookId": 3
+      "id": 2,
+      "date": "2022-01-11T00:00:00.000Z",
+      "grade": 90,
+      "urlVideo": "https://www.ivi.ru/",
+      "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
+      "review": "Описание книги2 Описание книги2 Описание книги2",
+      "meetingId": 1,
+      "speakerId": 2,
+      "bookId": 2
+    },
+    {
+      "date": "2021-12-29T19:00:00.000Z",
+      "grade": 88,
+      "urlVideo": "https://habr.com/ru/post/189094/",
+      "urlPresentation": "",
+      "review": "Чистый код",
+      "meetingId": 2,
+      "bookId": 6,
+      "speakerId": 3,
+      "id": 3
     }
   ]
 }

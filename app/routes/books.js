@@ -1,7 +1,5 @@
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
-import { Promise } from 'rsvp';
-import { later } from '@ember/runloop';
 
 import { PER_PAGE } from '../controllers/books';
 
@@ -42,7 +40,7 @@ export default Route.extend({
 
   actions: {
     loading(transition, originRoute) {
-      return false;
+      return true;
     },
   },
 });

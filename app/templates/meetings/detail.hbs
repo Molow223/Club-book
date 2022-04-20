@@ -1,0 +1,17 @@
+<div class="slide-out">
+    <div class="title">
+        <div class="slide-out-card">
+            {{#link-to "meetings"}}
+            <button class="btn btn-outline-primary" type="button">Back</button>
+            {{/link-to}}
+        </div>
+        <div>
+            <h3>{{model.title}} {{model.author}}</h3>
+            <img src={{model.img}} class="card-img-top my-3" alt="Обложка автора">
+            {{#link-to "meetings" model.id class="btn btn-outline-primary"}}
+           edit
+            {{/link-to}}
+            <button class="btn btn-outline-primary" type="button">delete</button>
+        </div>
+    </div>
+</div>

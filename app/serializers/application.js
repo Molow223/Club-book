@@ -5,6 +5,10 @@ export default DS.JSONSerializer.extend({
     normalize(model, hash) {
         return this._super(...arguments);
     },
+    serialize() {
+        let json = this._super(...arguments);
+        return json;
+    },
 
     keyForRelationship(key, typeClass, method) {
         if (typeClass === 'belongsTo') {

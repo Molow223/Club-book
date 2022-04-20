@@ -16,6 +16,6 @@ export default Route.extend({
   },*/
 
   model({ id }) {
-    return this.store.findRecord('book', id);
+    return this.get('store').findRecord('book', id);
   },
 });

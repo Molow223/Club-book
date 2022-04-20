@@ -1,9 +1,9 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  firstName: DS.attr(),
-  lastName: DS.attr(),
-  img: DS.attr(),
+  firstName: DS.attr('string'),
+  lastName: DS.attr('string'),
+  img: DS.attr('string'),
   
-  books: DS.hasMany('book'),
+  books: DS.belongsTo('book'),
 });

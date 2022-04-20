@@ -6,6 +6,7 @@ export default Service.extend({
     init() {
         this._super(...arguments);
         this.set('speakers', A());
+        this.set('books', A());
     },
 
     async getSpeakersData(search) {
@@ -13,7 +14,6 @@ export default Service.extend({
         if (search) {
             queryParams = `?q=${search}`;
         }
-
         const response = await fetch(`${ENV.backendURL}/speakers${queryParams}`);
         let speakers = await response.json();
         this.speakers.clear();
@@ -43,7 +43,7 @@ export default Service.extend({
     },
 
     async updateSpeaker(speaker) {
-        this.speakers.removeObject(speaker);
+        //this.speakers.removeObject(speaker);
         return fetch(`${ENV.backendURL}/speakers/${speaker.id}`, {
             method: 'PATCH',
             headers: {
