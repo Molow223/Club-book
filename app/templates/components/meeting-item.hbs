@@ -1,6 +1,5 @@
 <div class="col mb-4">
   <div class="card">
-    <img src={{get-meetings img}} class="card-img-top" alt="Обложка книги">
     <div class="card-header">
       {{#link-to "meetings.detail" id}}
       <h5 class="card-title">{{get-meetings id}}</h5>
@@ -8,7 +7,7 @@
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <div><strong>Автор</strong>: {{get-meetings reservationDate}}</div>
+        <div><strong>Дата </strong>: {{get-meetings reservationDate}}</div>
           <a href="#" class="tag-link"><span class="small">#программирование</span></a>
 
       </li>
@@ -22,8 +21,8 @@
           <a href="#" class="card-link line-offset">Описание</a>
         </div>
         <div class="col text-right">
-          {{#link-to "meetings.detail" id}}
-          <button type="button" class="btn btn-edit" onclick="javascript:location='books'">
+        {{#link-to "meetings.detail" id}}
+          <button type="button" class="btn btn-edit">
             <svg viewBox="0 0 16 16" class="bi bi-pencil card-button" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -31,6 +30,7 @@
             </svg>
           </button>
           {{/link-to}}
+          {{#link-to "meetings.detail" id}}
           <button type="button" class="btn btn-trash">
             <svg viewBox="0 0 16 16" class="bi bi-trash card-button" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +40,10 @@
                 d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
             </svg>
           </button>
+          {{/link-to}}
         </div>
       </div>
     </div>
   </div>
+
 </div>

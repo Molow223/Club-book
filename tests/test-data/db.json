@@ -1,12 +1,6 @@
 {
   "speakers": [
     {
-      "firstName": "Karl",
-      "lastName": "Marks",
-      "img": "/1.jpg",
-      "id": 1
-    },
-    {
       "firstName": "Pepsi",
       "lastName": "Cola",
       "img": "/3.jpg",
@@ -45,26 +39,6 @@
   ],
   "books": [
     {
-      "id": 3,
-      "title": "Про кубики",
-      "speakerId": 1,
-      "pages": 789,
-      "img": "/3.jpg",
-      "progress": null,
-      "author": "пр2",
-      "isbn": null,
-      "publishDate": null
-    },
-    {
-      "id": 4,
-      "title": "Чип и Дейл",
-      "speakerId": "1",
-      "pages": "147",
-      "img": "/6.jpg",
-      "progress": "68%",
-      "author": "Rokfor"
-    },
-    {
       "title": "kool",
       "speakerId": "3",
       "pages": "12",
@@ -72,15 +46,6 @@
       "progress": "13%",
       "id": 13,
       "author": "Joy Go"
-    },
-    {
-      "title": "сми",
-      "author": "jurnal",
-      "speakerId": "1",
-      "pages": "89",
-      "img": "/6.jpg",
-      "progress": "52%",
-      "id": 20
     },
     {
       "title": "Hot",
@@ -122,12 +87,12 @@
     {
       "reservationDate": "24.10.2019",
       "id": 6,
-      "reports": []    
+      "reports": []
     },
     {
       "reservationDate": "27.10.2019",
       "id": 7,
-      "reports": []    
+      "reports": []
     }
   ],
   "reports": [
@@ -138,7 +103,7 @@
       "urlVideo": "https://www.youtube.com/",
       "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
       "review": "Описание книги1 Описание книги1 Описание книги1 Описание книги1",
-      "meetingId": 1,
+      "meetingId": 4,
       "speakerId": 1,
       "bookId": 1
     },
@@ -149,7 +114,7 @@
       "urlVideo": "https://www.ivi.ru/",
       "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
       "review": "Описание книги2 Описание книги2 Описание книги2",
-      "meetingId": 1,
+      "meetingId": 3,
       "speakerId": 2,
       "bookId": 2
     },
@@ -159,10 +124,11 @@
       "urlVideo": "https://habr.com/ru/post/189094/",
       "urlPresentation": "",
       "review": "Чистый код",
-      "meetingId": 2,
+      "meetingId": 3,
       "bookId": 6,
       "speakerId": 3,
-      "id": 3
+      "id": 9
     }
-  ]
+  ],
+
 }

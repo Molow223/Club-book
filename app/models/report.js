@@ -7,7 +7,7 @@ export default DS.Model.extend({
     urlPresentation: DS.attr('string'),
     review: DS.attr('string'),
   
-    meetings: DS.belongsTo('meeting'),
-    books: DS.belongsTo('book'),
-    speakers: DS.belongsTo('speaker') 
+    meeting: DS.belongsTo('meeting'),
+    book: DS.belongsTo('book'),
+    speaker: DS.belongsTo('speaker') 
 });

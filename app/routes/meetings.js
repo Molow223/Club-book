@@ -35,13 +35,13 @@ export default Route.extend({
     if (searchDate) {
       query.searchDate = searchDate;
     }
-    //return this.get('store').findAll('meeting');
-    return RSVP.hash({
-      speakers: this.store.findAll('speaker'),
-      books: this.store.findAll('book'),
-      meetings: this.store.query('meeting', query),
-      reports: this.store.findAll('report'),  
-  });
+    return this.get('store').findAll('meeting');
+    /*return RSVP.hash({
+      speakers: this.get('store').findAll('speaker'),
+      books: this.get('store').findAll('book'),
+      meetings: this.get('store').query('meeting', query),
+      reports: this.get('store').findAll('report'),  
+  });*/
   },
 
   setupController() {
