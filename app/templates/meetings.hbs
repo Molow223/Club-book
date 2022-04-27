@@ -122,13 +122,13 @@
 
 			<h4>Список докладов</h4>
 			<ul class="list-group">
-				{{#each this.model as |report|}}
+				{{#each this.model.meeting.reports as |report|}}
 				<li class="list-group-item">
 					<div class="row h-100 justify-content-between">
 						<div class="col-md-2 text-center">
 							<h5 class="py-2">Спикер</h5>
 							<img src="/6.jpg" class="rounded w-100" alt="Спикер">
-							<p>{{report.review}}</p>
+							<p>{{report.speaker.firstName}}</p>
 						</div>
 						<div class="col-md-2 text-center">
 							<h5 class="py-2">Книга</h5>

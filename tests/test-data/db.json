@@ -61,7 +61,7 @@
       "title": "Hot",
       "author": "Dog",
       "pages": 258,
-      "img": "/2.jpg",
+      "img": "/3.jpg",
       "progress": 12,
       "isbn": null,
       "publishDate": null,
@@ -72,7 +72,19 @@
     {
       "reservationDate": "24.10.2019",
       "id": 3,
-      "reports": []
+      "reports": [
+        {
+          "id": 1,
+          "date": "2022-01-11T00:00:00.000Z",
+          "grade": 75,
+          "urlVideo": "https://www.youtube.com/",
+          "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
+          "review": "Описание книги1 Описание книги1 Описание книги1 Описание книги1",
+          "meetingId": 1,
+          "speakerId": 1,
+          "bookId": 1
+        }
+      ]
     },
     {
       "reservationDate": "26.10.2019",
@@ -97,7 +109,7 @@
   ],
   "reports": [
     {
-      "id": 1,
+      "id": 3,
       "date": "2022-01-11T00:00:00.000Z",
       "grade": 75,
       "urlVideo": "https://www.youtube.com/",
@@ -108,7 +120,7 @@
       "bookId": 1
     },
     {
-      "id": 2,
+      "id": 5,
       "date": "2022-01-11T00:00:00.000Z",
       "grade": 90,
       "urlVideo": "https://www.ivi.ru/",
@@ -127,8 +139,8 @@
       "meetingId": 3,
       "bookId": 6,
       "speakerId": 3,
-      "id": 9
+      "id": 7
     }
-  ],
+  ]
 
 }
