@@ -1,6 +1,5 @@
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
-
 import { PER_PAGE } from '../controllers/books';
 
 export default Route.extend({

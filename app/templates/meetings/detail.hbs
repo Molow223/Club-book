@@ -6,12 +6,12 @@
             {{/link-to}}
         </div>
         <div>
-            <h3>doof</h3>
-            <img src="#" class="card-img-top my-3" alt="Обложка автора">
-            {{#link-to "meetings.detail" id class="btn btn-outline-primary"}}
+            <h3>{{model.reservationDate}}</h3>
+            <img src="/4.jpg" class="card-img-top my-3" alt="Обложка автора">
+            {{#link-to "meetings.detail" model.id class="btn btn-outline-primary"}}
            edit
             {{/link-to}}
-            <button class="btn btn-outline-primary" type="button">delete</button>
+            <button class="btn btn-outline-primary" onclick={{action "deleteMeeting" this.model}} type="button">delete</button>
         </div>
     </div>
 </div>

@@ -43,9 +43,10 @@
       "speakerId": "3",
       "pages": "12",
       "img": "/4.jpg",
-      "progress": "13%",
+      "progress": "75%",
       "id": 13,
-      "author": "Joy Go"
+      "author": "Joy Go",
+      "size": null
     },
     {
       "title": "Hot",
@@ -70,28 +71,6 @@
   ],
   "meetings": [
     {
-      "reservationDate": "24.10.2019",
-      "id": 3,
-      "reports": [
-        {
-          "id": 1,
-          "date": "2022-01-11T00:00:00.000Z",
-          "grade": 75,
-          "urlVideo": "https://www.youtube.com/",
-          "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
-          "review": "Описание книги1 Описание книги1 Описание книги1 Описание книги1",
-          "meetingId": 1,
-          "speakerId": 1,
-          "bookId": 1
-        }
-      ]
-    },
-    {
-      "reservationDate": "26.10.2019",
-      "id": 4,
-      "reports": []
-    },
-    {
       "reservationDate": "26.10.2019",
       "id": 5,
       "reports": []
@@ -107,40 +86,5 @@
       "reports": []
     }
   ],
-  "reports": [
-    {
-      "id": 3,
-      "date": "2022-01-11T00:00:00.000Z",
-      "grade": 75,
-      "urlVideo": "https://www.youtube.com/",
-      "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
-      "review": "Описание книги1 Описание книги1 Описание книги1 Описание книги1",
-      "meetingId": 4,
-      "speakerId": 1,
-      "bookId": 1
-    },
-    {
-      "id": 5,
-      "date": "2022-01-11T00:00:00.000Z",
-      "grade": 90,
-      "urlVideo": "https://www.ivi.ru/",
-      "urlPresentation": "https://www.google.ru/intl/ru/slides/about/",
-      "review": "Описание книги2 Описание книги2 Описание книги2",
-      "meetingId": 3,
-      "speakerId": 2,
-      "bookId": 2
-    },
-    {
-      "date": "2021-12-29T19:00:00.000Z",
-      "grade": 88,
-      "urlVideo": "https://habr.com/ru/post/189094/",
-      "urlPresentation": "",
-      "review": "Чистый код",
-      "meetingId": 3,
-      "bookId": 6,
-      "speakerId": 3,
-      "id": 7
-    }
-  ]
-
+  "reports": []
 }

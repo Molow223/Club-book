@@ -6,6 +6,7 @@ export default Controller.extend({
     async deleteSpeaker(speaker) {
       await speaker.destroyRecord();
       this.get('store').unloadRecord(speaker);
+      this.transitionToRoute('speakers');
     },
   }
 });

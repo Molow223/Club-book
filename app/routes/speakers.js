@@ -9,9 +9,9 @@ export default Route.extend({
   },
 
   model({ search }) {
-    /*if (search) {
-      return this.get('store').query('speaker', { q: search });
-    }*/
+    if (search) {
+      return this.get('store').findAll('speaker', { q: search });
+    }
     return this.get('store').findAll('speaker');
   },
 
