@@ -1,8 +1,11 @@
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+
     {{#link-to "application"}}
     <img src="/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     Книжный клуб
     {{/link-to}}
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
         <span class="navbar-toggler-icon"></span>
@@ -46,11 +49,11 @@
     </div>
 </nav>
 
-<div class="container h-100" style="margin-top: 100px;">
+<div class="container h-100">
     {{outlet}}
 </div>
 
-<footer class="footer fixed-bottom blockquote">
+<footer class="footer fixed-bottom blockquote center">
     <div class="container">
         <span>&copy; Skyori, 2022</span>
     </div>
